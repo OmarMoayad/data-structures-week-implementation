@@ -1,54 +1,38 @@
-# data-structures-week-implementation
+🧠 Implemented Data Structures
+1. Dynamic Array
+A resizable array that automatically grows when full.
 
+Average Time Complexity: O(1) amortized
 
----
+Worst Case: O(n) during resize
 
-## 📦 Implemented Data Structures
+Space Complexity: O(n)
 
-### 1. Dynamic Array
+2. Singly Linked List
+Each element (node) points to the next; allows dynamic memory allocation.
 
-A dynamic array is a resizable array that automatically grows when full.
+Time Complexity (Overall): O(n)
 
-**Overall Time Complexity**:  
-- Average: O(1) per operation (amortized)  
-- Worst Case: O(n) during resize  
+Space Complexity: O(n)
 
-**Space Complexity**: O(n)
+3. Stack using Array
+A Last-In-First-Out (LIFO) stack using a dynamic array.
 
----
+Average Time Complexity: O(1)
 
-### 2. Singly Linked List
+Worst Case: O(n) during resize
 
-A singly linked list is a dynamic data structure where each element points to the next.
+Space Complexity: O(n)
 
-**Overall Time Complexity**: O(n)  
-**Space Complexity**: O(n)
+4. Stack using Linked List
+LIFO stack implemented with linked list for constant time operations.
 
----
+Time Complexity (All operations): O(1)
 
-### 3. Stack using Array
-
-A stack is a LIFO structure implemented here with a dynamic array.
-
-**Overall Time Complexity**:  
-- Average: O(1)  
-- Worst Case: O(n) during resize  
-
-**Space Complexity**: O(n)
-
----
-
-### 4. Stack using Linked List
-
-A stack implemented using a linked list for fast push/pop.
-
-**Overall Time Complexity**: O(1)  
-**Space Complexity**: O(n)
+Space Complexity: O(n)
 
 5. Queue using Linked List
-A queue is a FIFO structure implemented using a singly linked list.
-
-Overall Time Complexity:
+A First-In-First-Out (FIFO) queue using a singly linked list.
 
 Enqueue: O(1)
 
@@ -56,32 +40,53 @@ Dequeue: O(1)
 
 Space Complexity: O(n)
 
-6. Circular Linked List
-A circular linked list where the last node points to the first, allowing continuous traversal.
+6. Queue using Array
+FIFO queue using an array with front and rear pointers.
 
-Overall Time Complexity:
+Time Complexity: O(1) (excluding dynamic resizing)
+
+Space Complexity: O(n)
+
+7. Circular Linked List
+A linked list where the last node points to the first.
 
 Insert at position: O(n)
 
-Delete/search: O(n)
+Delete/Search: O(n)
 
 Space Complexity: O(n)
 
-7. Doubly Linked List
-Each node has both next and prev pointers, allowing bidirectional traversal.
+8. Doubly Linked List
+Each node contains next and prev pointers for bidirectional traversal.
 
-Overall Time Complexity:
+Insert/Delete at front/back: O(1)
 
-Insert/delete front/back: O(1)
-
-Find/remove by value: O(n)
+Find/Remove by value: O(n)
 
 Space Complexity: O(n)
 
-8. Queue using Array
-A simple linear queue using an array with front/rear management.
+9. Binary Tree
+A general tree with at most two children per node. Supports:
 
-Overall Time Complexity:
+Inorder Traversal: Left → Root → Right
+
+Preorder Traversal: Root → Left → Right
+
+Postorder Traversal: Left → Right → Root
+
+Time Complexity (Traversal): O(n)
+
+Space Complexity: O(n) due to recursion stack
+
+📄 See: binarytree.cpp
+
+10. Binary Search Tree (BST)
+A binary tree where left subtree < root < right subtree.
+
+Insert/Search/Delete (Average): O(log n)
+
+Insert/Search/Delete (Worst - skewed tree): O(n)
+
+Traversals (Inorder, Preorder, Postorder): O(n)
 
 Space Complexity: O(n)
-
