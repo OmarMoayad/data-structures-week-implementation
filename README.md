@@ -90,3 +90,34 @@ Insert/Search/Delete (Worst - skewed tree): O(n)
 Traversals (Inorder, Preorder, Postorder): O(n)
 
 Space Complexity: O(n)
+
+11. Hash Table with Chaining
+Uses separate chaining (linked list or vector) to handle collisions.
+
+Insert/Delete/Search (Average): O(1)
+
+Insert/Delete/Search (Worst): O(n) — if many collisions
+
+Collision Handling: ✅ via chaining
+
+Hash Function Used: key % bucket_count
+
+Space Complexity: O(n + m), where n is number of elements and m is number of buckets
+
+
+12. Graph using Adjacency Matrix
+A 2D matrix where matrix[i][j] = 1 if there is an edge from vertex i to j.
+
+Edge Lookup: O(1)
+
+Add/Delete Edge: O(1)
+
+Space Complexity: O(V²)
+
+13. Min Heap
+A binary tree where the parent is always ≤ its children. The minimum element is always at the root.
+
+Insert / Extract Min: O(log n)
+Get Min: O(1)
+Build Heap: O(n)
+Space Complexity: O(n)
