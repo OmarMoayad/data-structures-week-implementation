@@ -118,6 +118,9 @@ Space Complexity: O(V²)
 A binary tree where the parent is always ≤ its children. The minimum element is always at the root.
 
 Insert / Extract Min: O(log n)
+
 Get Min: O(1)
+
 Build Heap: O(n)
+
 Space Complexity: O(n)
