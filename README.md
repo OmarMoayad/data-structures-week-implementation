@@ -124,3 +124,21 @@ Get Min: O(1)
 Build Heap: O(n)
 
 Space Complexity: O(n)
+
+14. Trie (Prefix Tree)
+    
+Tree structure storing strings by prefix.
+
+Insert/Search/Delete: O(m), m = key length
+
+BFS & DFS traversals implemented to explore nodes and print words
+
+Space: O(n * alphabet_size)
+
+16. Union-Find (Disjoint Set)
+
+Structure for grouping elements into disjoint sets.
+
+Find/Union: Amortized O(α(n)) (Inverse Ackermann function)
+
+Space: O(n)
